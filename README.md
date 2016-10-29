@@ -2,6 +2,9 @@
 
 Creates a Markov model of words from text documents.
 
+Requires python (known to work with v2.7)
+Requires numpy
+
 ###INPUT
 
   Text document.  
@@ -17,7 +20,7 @@ Creates a Markov model of words from text documents.
 
 ### OUTPUT
 
-After the chain of words has been created the words are ouput to stdout.  
+After the chain of words has been created the words are ouput to stdout.  To save the output to a file issue a redirect command from the command line to redirect the output from stdout to a filename. To increase the length of the output (markov chain) change the loop variable in the code, method: processChain.
 
 Imports: numpy, sys, random
 
