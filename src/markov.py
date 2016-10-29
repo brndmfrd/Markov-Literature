@@ -6,7 +6,7 @@ import random
 
 
 def main():
-    filename = 'oldmansea'
+    filename = 'trumpspeeches'
     #filename = 'cockoosnest' 
     # num distinct words, list of a'll words, list of all distinct words 
     allwords, d_allwords = cleanInput(filename)    
@@ -89,7 +89,7 @@ def processChain(A, dist_w):
     start = dist_w[rindex[0]]
     print start
 
-    for i in xrange(50):           # chain 10x
+    for i in xrange(100):           # chain 10x
         # pick our next state
         rindex = weightedPick([A[rindex[0],e] for e in xrange(n)], 1)
         print dist_w[rindex[0]]
